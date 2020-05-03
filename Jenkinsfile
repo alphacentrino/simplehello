@@ -17,7 +17,7 @@ pipeline {
   stages {
       stage('Cloning Git') {
       steps {
-        git 'https://github.com/alphacentrino/hello-world.git'
+        git 'https://github.com/alphacentrino/simplehello.git'
       }
     }
     stage('Build Package'){
