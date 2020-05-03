@@ -1,4 +1,5 @@
 pipeline {  
+/* Environment Variable declaration */
     environment {
     registry = "rdocker11/simplehello"
     registryCredential = 'dockerhub'
@@ -14,6 +15,7 @@ pipeline {
         maven 'maven3.6.3' 
         
     }
+    /* Stages */
   stages {
       stage('Cloning Git') {
       steps {
