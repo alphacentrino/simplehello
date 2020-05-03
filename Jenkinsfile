@@ -23,7 +23,8 @@ pipeline {
         git 'https://github.com/alphacentrino/simplehello.git'
       }
     }
-    stage('Build Package'){
+    /* Package Build */
+    stage('Package Build'){
        steps{ 
            
         sh 'mvn clean package'
